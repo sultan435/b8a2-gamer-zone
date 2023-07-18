@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:wght@400;700&family=Open+Sans:wght@400;600;700;800&family=Work+Sans:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+/* navbar style starts here */
+
+.navber {
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+.nav-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 38px 0px;
+
+
+}
+
+.logo-container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.nav-container p {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.nav-icon-name {
+    background-image: linear-gradient(to bottom, #FF42A5 0%, #FF42A5 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.nav-items-container {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-items-container a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #3C354F;
+}
+
+.nav-button {
+    padding: 18px 24px;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+}
+
+.btn-icon{
+    color: red;
+    margin: 0px 16px 0px 24px;
+    font-size: 20px;
+
+}
+
+.btn-icon-two{
+    font-size: 20px;
+}
+
+/* navbar style ends here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+
+    .nav-container, .nav-items-container{
+        flex-direction: column;
+    }
+    .btn-icon, .btn-icon-two{
+        font-size: 16px;
+        margin: 0px 0px;
+    }
+    .nav-items-container{
+        margin-top: 45px;
+    }
+    .nav-button{
+        margin-top: 20px;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 576px) and (max-width: 960px){
+
+    .nav-container, .nav-items-container{
+        flex-direction: column;
+    }
+    .nav-items-container{
+        margin-top: 45px;
+    }
+    .nav-button{
+        margin-top: 20px;
+    }
+}
