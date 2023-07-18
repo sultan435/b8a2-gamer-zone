@@ -24,9 +24,14 @@ body {
     padding: 20px 40px;
     border-radius: 48px;
     background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
-    border:none;
+    border: none;
 }
 
+.section-title {
+    background-image: linear-gradient(to bottom, #FF42A5 0%, #FF42A5 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+}
 
 
 
@@ -60,11 +65,7 @@ body {
     font-weight: 700;
 }
 
-.nav-icon-name {
-    background-image: linear-gradient(to bottom, #FF42A5 0%, #FF42A5 100%);
-    color: transparent;
-    -webkit-background-clip: text;
-}
+
 
 .nav-items-container {
     width: 50%;
@@ -98,11 +99,15 @@ body {
     font-size: 20px;
 }
 
+
 /* navbar style ends here */
 
-.banar{
+/* banar style starts here */
+
+
+.banar {
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 0 auto 120px;
     display: flex;
 }
 
@@ -111,7 +116,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("../images/Group\ 14.png"), linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%); 
+    background-image: url("../images/Group\ 14.png"), linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
 }
 
 .banar-img {
@@ -145,18 +150,264 @@ body {
     font-weight: 500;
     margin-bottom: 15px;
 }
-.banar-content button{
+
+.banar-content button {
     margin-top: 20px;
 }
-.btn-bg{
+
+.btn-bg {
     color: #FFF;
     font-size: 1.1rem;
     font-weight: 600;
     padding: 20px 40px;
     border-radius: 48px;
     background: #4EC5F7;
-    border:none;
+    border: none;
 }
+
+
+/* banar style ends here */
+
+/* online games style starts here */
+
+
+.online-games-section {
+    max-width: 1440px;
+    margin: 0 auto 120px;
+}
+
+.online-game-title {
+    text-align: center;
+}
+
+.online-game-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.online-game-title h3 {
+    color: #0B0223;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.online-game-title p {
+
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.game-card img {
+    width: 100%;
+}
+
+.game-card {
+    width: 342px;
+}
+
+.game-card p {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+/* online games style ends here */
+
+/* game play style starts here */
+
+.game-play-container {
+    max-width: 1440px;
+    margin: 0 auto 120px;
+    display: flex;
+}
+
+.game-content {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+}
+
+.game-title {
+    color: #0B0223;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.game-discription {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.game-img {
+    width: 50%;
+    position: relative;
+}
+
+.game-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.litle {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    bottom: -10%;
+    left: -20%;
+}
+
+.litle img {
+    border-radius: 8px;
+}
+
+/* game play style ends here */
+
+/* game button style starts here */
+
+.game-button-container {
+    max-width: 1200px;
+    margin: 0 auto 130px;
+    min-height: 400px;
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 32px;
+
+    /* grid-template-columns: repeat(5,1fr); */
+
+
+
+
+
+
+}
+
+
+.btn-game-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px 10px 10px;
+    border-radius: 50px;
+    background: #b61111;
+    border: none;
+    gap: 16px;
+}
+
+/* footer section style starts here */
+
+footer {
+    background-color: #0B0223;
+    padding: 120px 0px;
+}
+/* .footer-container{
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid red;
+} */
+.footer-image-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.footer-image-icon p {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.footer-list {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    color: #fff;
+    margin-bottom: 60px;
+}
+.list-one{
+    display: flex;
+    gap: 60px;
+}
+.list-two{
+    display: flex;
+    gap: 60px;
+}
+
+.footer-list li {
+    list-style: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.footer-icons {
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    gap: 40px;
+    color: #fff;
+    margin-bottom: 60px;
+}
+.icons-one{
+    display: flex;
+    gap: 40px;
+}
+.icons-two{
+    display: flex;
+    gap: 40px;
+}
+
+.footer-privacy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 28px;
+}
+.privacy-one{
+    display: flex;
+    gap: 60px;
+}
+.privacy-two{
+    display: flex;
+    gap: 60px;
+}
+
+.footer-privacy li {
+    list-style: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.60);
+}
+
+.copy-right {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+    
+}
+
+
+
+
 
 
 
@@ -195,23 +446,108 @@ body {
     .nav-button {
         margin-top: 20px;
     }
+
     /* nav style ends here*/
 
-    .banar{
+    /* nav style starts here*/
+
+    .banar {
         flex-direction: column-reverse;
         padding: 25px;
     }
-    .banar-img{
+
+    .banar-img {
         width: 70%;
         margin: 0 auto 24px;
-        
+
     }
 
-    .banar-container{
+    .banar-container {
         width: 100%;
     }
 
+    /* nav style ends here*/
+
+    /* online game style starts here*/
+
+    .online-game-container {
+
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0px;
+        margin-top: 35px;
+    }
+
+    .game-card {
+        width: 80%;
+        margin: 0 auto;
+        padding: 15px;
+    }
+
+    .game-card p {
+        font-size: 0.6rem;
+    }
+
+    .online-game-title h3 {
+        font-size: 1.5rem;
+    }
+
+    .online-game-title p {
+        font-size: 0.6rem;
+    }
+
+    /* online game style end here*/
+
+    /* game play style starts */
+    .game-play-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .litle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .game-img {
+        width: 70%;
+        margin: 75px auto 0;
+    }
+
+    .game-content {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    /* game play style starts */
+
+    .footer-list, .footer-icons, .footer-privacy{
+        flex-direction: column;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -236,17 +572,71 @@ body {
 
     /* banar style */
 
-    .banar{
+    .banar {
         flex-direction: column-reverse;
         padding: 25px;
     }
-    .banar-img{
+
+    .banar-img {
         width: 70%;
         margin: 0 auto 24px;
-        
+
     }
 
-    .banar-container{
+    .banar-container {
         width: 100%;
     }
+
+    /* banar style ends */
+    /* online game style starts here*/
+
+    .online-game-container {
+
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0px;
+        margin-top: 35px;
+    }
+
+    .game-card {
+        width: 100%;
+        margin: 0 auto;
+        padding: 15px;
+    }
+
+    .game-card p {
+        font-size: 0.6rem;
+    }
+
+    .online-game-title h3 {
+        font-size: 1.5rem;
+    }
+
+    .online-game-title p {
+        font-size: 0.6rem;
+    }
+
+    /* online game style end here*/
+
+    /* game play style starts */
+    .game-play-container {
+        flex-direction: column;
+    }
+
+    .litle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .game-img {
+        width: 70%;
+        margin: 75px auto 0;
+    }
+
+    .game-content {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    /* game play style starts */
 }
