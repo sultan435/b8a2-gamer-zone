@@ -241,6 +241,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border: 5px solid #FF42A5;
     opacity: 0;
 }
 .overlay-icon:hover{
@@ -561,6 +562,13 @@ footer {
         font-size: 0.7rem;
         font-weight: 600;
 
+    }
+    .btn-game-link:hover {
+        background-image: linear-gradient(to bottom, #FF42A5 0%, #FF42A5 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+        border: 2px solid #F948B2;
+        cursor: pointer;
     }
 
     .game-button-container img {
